@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView for displaying the quiz question -->
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the capital of France?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RadioGroup for displaying answer options -->
+    <RadioGroup
+        android:id="@+id/answer_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- RadioButton for the first answer option -->
+        <RadioButton
+            android:id="@+id/answer_option_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option A"/>
+
+        <!-- RadioButton for the second answer option -->
+        <RadioButton
+            android:id="@+id/answer_option_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option B"/>
+
+        <!-- Add more RadioButtons for additional answer options as needed -->
+
+    </RadioGroup>
+
+    <!-- Button for navigating to the next question -->
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"/>
+
+</LinearLayout>
